@@ -5,7 +5,7 @@ import pickle
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins="http://localhost:3000/")
+CORS(app)
 
 
 with open('notebook/model.pkl', 'rb') as model_file:
